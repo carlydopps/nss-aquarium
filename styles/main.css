@@ -1,20 +1,59 @@
-Body {
+.title {
     text-align: center;
 }
 
-.pageHeader {
-    margin: 10px;
+body {
+    background-image: url("https://img.freepik.com/free-vector/bubbles-seamless-pattern-blue_1284-43368.jpg?w=1480&t=st=1658295577~exp=1658296177~hmac=b3b77a8ff96f2a2896339267e018806d01e59a19efd8bc205de5fa02a8de5bfc");
 }
 
-.list{
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
+.fish {
+    flex-direction: row;
+    justify-content: space-around;
 }
 
-.shop {
-    text-align: left;
-    width: 30%;
-    padding: 3px;
-    border: 1px dashed black;
+.card {
+    flex-direction: row;
+    text-align: center;
+
+}
+
+.image--card {
+    background-color: lightgray;
+    border-radius: 20%;
+    align-content: center;
+}
+
+.fish__image {
+    flex-direction: row;
+    align-content: center;
+    width: 75%;
+
+}
+
+.ul {
+}
+
+.fish__name {
+    font-weight: bold;
+    font-size: larger;
+    padding: 0 0 10px 0;
+    align-content: center;
+}
+
+.fish__species {
+    list-style-type: circle;
+    justify-content: left;
+}
+
+.fish__location {
+    list-style-type: circle;
+
+}
+
+.fish__name {
+
+}
+
+.fish__diet {
+
 }

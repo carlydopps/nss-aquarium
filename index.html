@@ -1,27 +1,61 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <title>Nashville Coffee Houses</title>
-    <link rel="stylesheet" href="styles/main.css">
-  </head>
-  <body>
-	<header class="pageHeader">Coffee Houses of Nashville</header>
+<!-- Creating website
+    Head
+        Title
+        Maybe nav bar at the top of the page in the future
+    Body
+        Main
+            Section for list of fish currently own
+                - Article for each fish
+                    - Details for each fish:
+                        Image
+                        Species
+                        Length
+                        Name
+                        Where it was harvested
+                        What it eats
+            Section for travel tips
+                - Add quotes for travel tips above list of locations
+            Section for list of places visited to collect (oops "harvest") fish 
+                - Article for each location and fish harvested there
+            Article
+                Aside for care tips to the right of list of fish
+                    - process of keeping tank clean
+                    - water at right salinity and  temp  -->
+        
 
-    <section class="list">
-      <article class="shop">The Jam</article>
-      <article class="shop">The Well</article>
-      <article class="shop">Red Bicycle</article>
-      <article class="shop">Crema</article>
-      <article class="shop">Frothy Monkey</article>
-      <article class="shop">8th &amp; Roast</article>
-      <article class="shop">Bongo Java</article>
-      <article class="shop">Flatrock</article>
-      <article class="shop">Fido</article>
-      <article class="shop">Steadfast Coffee</article>
-      <article class="shop">Dose Coffee</article>
-      <article class="shop">Sam &amp; Zoes</article>
-      <article class="shop">Slow Hand Coffee</article>
-      <article class="shop">The Horn</article>
-    </section>
-  </body>
+<html lang="en">
+    <head>
+        <h1 style="text-align: center;">Martin's Aquarium</h1>
+        <link rel="stylesheet" href="./styles/main.css">
+    </head>
+    <body>
+        <link rel="stylesheet" href="./styles/main.css">
+        <main>
+            <h2 style="text-align: center;">Fish Collection</h2>
+            <section class = "fish card"> 
+                <div><img src="${fish.image}"/></div>
+                <ul style="list-style-type:circle;">
+                    <li class="fish__name">${fish.name}</li>
+                    <li class="fish__species">${fish.species}</li>
+                    <li class="fish__length">${fish.length}</li>
+                    <li class="fish__location">${fish.location}</li>
+                    <li class="fish__diet">${fish.food}</li>
+                    <article></article>
+                </ul>
+            </section>
+            <h3 style="text-align: center;">Travel Tips</h3>
+            <section>
+                <article></article>
+            </section>
+            <h2 style="text-align: center;">Harvesting Locations</h2>
+            <section>
+                <article></article>
+            </section>
+            <h3 style="text-align: center;">Fish Tank Care Tips</h3>
+            <article>
+                <aside></aside>
+            </article>
+        </main>
+        <script type="module" src="./scripts/main.js"></script>
+    </body>
 </html>
